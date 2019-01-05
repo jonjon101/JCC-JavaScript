@@ -1,0 +1,32 @@
+html, body {
+padding : 0 ;
+margin : 0 ;
+height : 100%;
+background  : linear-gradient(70deg, black, white) fixed;
+}
+
+.buttondiv {
+position : absolute;
+width : 60% ;
+height : 10% ;
+float : left ;
+margin-top : 40% ;
+margin-left : 24%;
+}
+
+td {
+width : 5% ;
+float : left;
+margin: 15px ;
+color : white ;
+padding: 2px;
+
+border : none ;
+}
+
+.image {
+position : absolute;
+margin-top : 10% ;
+margin-left : 27% ;
+border : 2px solid black ;
+}

@@ -1,0 +1,57 @@
+html, body {
+padding : 0 ;
+margin : 0 ;
+height : 100%;
+}
+
+button {
+width : 7% ;
+height : 11% ;
+background-color : black ;
+color : white ;
+border : none ;
+}
+
+.buttonadd {
+position : absolute ;
+margin-left : 540px ;
+margin-top : 410px ;
+
+}
+
+.buttonsubtract {
+position : absolute ;
+margin-left : 780px ;
+margin-top : 410px ;
+}
+
+
+.buttonmultipy {
+position : absolute ;
+margin-left : 580px ;
+margin-top : 650px ;
+
+}
+
+.buttondivide {
+  position : absolute ;
+  margin-left : 820px ;
+  margin-top : 650px ;
+}
+
+.inputone {
+position : absolute ;
+margin-left : 520px ;
+margin-top : 150px ;
+width : 20% ;
+height : 5% ;
+}
+
+.inputtwo {
+position : absolute ;
+margin-left : 520px ;
+margin-top : 300px ;
+width : 20% ;
+height : 5% ;
+
+}

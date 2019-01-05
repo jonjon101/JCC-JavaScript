@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<title>Index 2</title>
+<meta name="viewport" width="device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="css/style2.css"/>
+</head>
+
+<body>
+
+<input class="inputone" placeholder="Number One" type="input" id="input1" required/>
+<input class="inputtwo" placeholder="Number Two" type="input" id="input2"/> <br>
+Result : <input placeholder="Result" type="input" id="result" readonly/>
+
+<button class="buttonadd" onclick="operations(this)" id="addition">+</button>
+<button class="buttonsubtract" onclick="operations(this)" id="subtract">-</button>
+<button class="buttonmultipy" onclick="operations(this)" id="multiply">*</button>
+<button class="buttondivide" onclick="operations(this)" id="divide">/</button>
+
+
+<script>
+
+function operations(btn){
+
+  let a;
+  let b;
+
+  let c
+  c=btn.id;
+  a=parseInt(document.getElementById("input1").value);
+  console.log(a);
+  b=parseInt(document.getElementById("input2").value);
+  if (c=="addition"){
+    document.getElementById("result").value=(a+b);
+
+  }
+
+  else if (c=="subtract"){
+    document.getElementById("result").value=(a-b);
+  }
+
+  else if (c=="multiply"){
+    document.getElementById("result").value=(a*b);
+  }
+
+  else {
+      document.getElementById("result").value=(a/b);
+    }
+
+  }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
