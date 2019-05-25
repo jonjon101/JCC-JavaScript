@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<title>Junior Coders May 18, 2019</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+
+<body>
+
+  <h1>My First JavaScript Animation</h1>
+  <button onclick="myMove()">Click</button>
+
+
+<div  id="container">
+  <div id="animation">My animation will go here.</div>
+</div>
+
+<script>
+
+
+
+function myMove() {
+var elem = document.getElementById("animation");
+var pos = 0;
+var id = setInterval(frame, 2);
+
+function frame() {
+  if (pos == 350){
+    clearInterval(id);
+  }
+  else {
+    pos++
+    elem.style.top = pos + 'px';
+    elem.style.left = pos + 'px';
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

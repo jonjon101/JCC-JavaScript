@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+<title>Index</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+  <body>
+
+    <div id="down" class="dropdown">
+      <p onclick="animation()" class="dropdownbtn">Dropdown</p>
+      <div class="dropdowncontent">
+        <div id="animate">
+         <a onclick="animation()" href="#">Link 1</a>
+         <a onclick="animation()"href="#">Link 2</a>
+         <a onclick="animation()" href="#">Link 3</a>
+       </div>
+       </div>
+     </div>
+
+     <button onclick="secondanimation()" id="button2">Click me</button>
+     <button onclick="thirdanimation()" id="button3">Click me</button>
+<button onclick="fourthanimation()" id="button4">Click me</button>
+
+
+<div id="animate2"></div>
+
+  </body>
+
+
+<script>
+
+function animation() {
+
+  var elem = document.getElementById("animate");
+  var pos = 0;
+  var id = setInterval(frame, 5);
+
+  function frame() {
+    if (pos==50){
+      clearInterval(id);
+    }
+    else {
+      pos++
+      elem.style.top = pos + "px" ;
+      elem.style.left = pos + "px" ;
+    }
+  }
+}
+
+function secondanimation() {
+  var elem = document.getElementById("button2");
+  var pos = 0;
+  var id = setInterval(frame, 2);
+
+function frame() {
+  if (pos==100){
+    clearInterval(id);
+  }
+  else {
+    pos++
+    elem.style.top = pos + "px" ;
+    elem.style.left = pos + "px";
+    document.getElementById("button2").style.width="200px";
+    document.getElementById("button2").style.color="black";
+    document.getElementById("button2").style.backgroundColor="white";
+  }
+}
+}
+
+function thirdanimation() {
+  var elem = document.getElementById("button3");
+  var pos = 0;
+  var id = setInterval(frame, 1);
+
+function frame() {
+  if (pos==200){
+    clearInterval(id);
+  }
+  else {
+    pos++
+    elem.style.top = pos + "px" ;
+    document.getElementById("button2").style.width="100px";
+    document.getElementById("button2").style.color="white";
+    document.getElementById("button2").style.backgroundColor="red";
+  }
+}
+}
+
+function fourthanimation() {
+  var elem = document.getElementById("animate2");
+  var pos = 0;
+  var id = setInterval(frame, 5);
+
+function frame() {
+  if (pos==200){
+    clearInterval(id);
+  }
+  else {
+    pos++
+    elem.style.top = pos + "px" ;
+    elem.style.left = pos + "px" ;
+    document.getElementById("button2").style.color="white";
+    document.getElementById("button2").style.backgroundColor="green";
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
